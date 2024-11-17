@@ -8,7 +8,7 @@ function PostBlog({posts}) {
   if (!post) return <p>Loading...may take a bit</p>;
 
   return (
-    <div>
+    <div className='blog'>
       <h2>{post.title}</h2>
       <img src={post.imageUrl} alt={post.title} style={{ width: "200px" }} />
       <p>{post.content}</p>

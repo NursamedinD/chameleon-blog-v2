@@ -22,7 +22,7 @@ function NewPostForm( addPost ) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className='form'>
         <h2>Add a New Post</h2>
         <label>Title</label>
         <input

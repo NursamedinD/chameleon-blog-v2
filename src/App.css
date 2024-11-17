@@ -1,0 +1,59 @@
+.app {
+  text-align: center;
+  margin: auto 0;
+}
+
+.body {
+  background-color: black;
+}
+
+
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  text-decoration: underline;
+  color: green;
+}
+.header button {
+  border: 3px solid darkred;
+  justify-content: space-between;
+  background-color: lightpink;
+}
+
+
+
+.home h1 {
+  text-decoration: underline;
+  color: darkgreen;
+}
+.home h2 {
+  text-decoration: underline;
+}
+
+
+
+.home img {
+  border: 5px solid green;
+}
+
+.blog img {
+  border: 5px dotted teal;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.blog h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.form {
+  text-decoration: underline;
+  color: darkgreen
+}
+
+

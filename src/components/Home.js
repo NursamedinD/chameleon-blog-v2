@@ -12,14 +12,14 @@ function Home() {
 
 
   return (
-    <div>
-      <h1>Chameleon Blog</h1>
+    <div className='home'>
+      <h1>Top posts</h1>
       {posts.map((post) => (
         <div key={post.id}>
           <h2>{post.title}</h2>
           <p>{post.content}</p>
           <img src={post.imageUrl} alt={post.title} style={{ width: "200px" }} />
-          <Link to={`/post/${post.id}`}>Read More</Link>
+          <Link to={`/post/${post.id}`}>Continue reading</Link>
         </div>
       ))}
     </div>
