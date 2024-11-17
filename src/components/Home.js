@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 
-function Home() {
+function Home({ initialPosts }) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
