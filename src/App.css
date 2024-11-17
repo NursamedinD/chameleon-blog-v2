@@ -47,7 +47,10 @@ a {
   border: 5px solid green;
 }
 
-
+.blog-card {
+  border: 3px solid turquoise;
+  border-style: dotted
+}
 
 .blog img {
   border: 5px dotted teal;

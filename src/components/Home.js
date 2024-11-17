@@ -15,7 +15,7 @@ function Home() {
     <div className='home'>
       <h1>Top posts</h1>
       {posts.map((post) => (
-        <div key={post.id}>
+        <div key={post.id} className='blog-card'>
           <h2>{post.title}</h2>
           <p>{post.content}</p>
           <img src={post.imageUrl} alt={post.title} style={{ width: "200px" }} />
