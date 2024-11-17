@@ -21,7 +21,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home posts={posts} />} />
+          <Route path="/" element={<Home initialPosts={posts} />} />
           <Route path="/post/:id" element={<PostBlog />} />
           <Route path="/new" element={<NewPostForm />} />
         </Routes>
