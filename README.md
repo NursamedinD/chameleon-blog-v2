@@ -49,8 +49,13 @@ This is a simple blog which allows users and readers to add, or view a blog dedi
 * React JS.
 * JSX.
 
+# Related Repositories
 
+* Repository: https://github.com/NursamedinD/chameleon-blog-v2-data
+* Deployed API: https://chameleon-blog-v2-data.onrender.com
 
+# Contact
+* If you come across any issues, you can email me at: nursamedin.a.dualle@gmail.com
 
 # License
 
