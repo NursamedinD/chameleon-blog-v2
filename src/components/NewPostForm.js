@@ -39,7 +39,7 @@ function NewPostForm({ addPost }) {
         <br />
         <label>Image</label>
         <input
-          type="text" 
+          type="text"  
           value={imageUrl}
           onChange={(event) => setImageUrl(event.target.value)}
         />
