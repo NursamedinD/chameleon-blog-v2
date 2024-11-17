@@ -17,6 +17,18 @@ function App() {
       setPosts(data));
   }, []);
 
+const addPost = (newPost) => {
+  fetch("http://localhost:5000/posts", {
+    method: 'POST',
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(newPost),
+  })
+  .then ((response) => response.json())
+  .then ((savedPost) => setPosts((prevPosts)=> [...prevPosts, savedPost]));
+};
+
   return (
     <div className="App">
       <Router>
@@ -24,7 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home posts={posts} />} />
           <Route path="/post/:id" element={<PostBlog posts={posts} />} />
-          <Route path="/new" element={<NewPostForm />} />
+          <Route path="/new" element={<NewPostForm addPost={addPost} />} />
         </Routes>
       </Router>
     </div>
