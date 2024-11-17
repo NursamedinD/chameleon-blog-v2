@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function NewPostForm( addPost ) {
+function NewPostForm({ addPost }) {
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
   const [imageUrl, setImageUrl] = useState('')
@@ -22,28 +22,28 @@ function NewPostForm( addPost ) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className='form'>
+      <div className="form">
         <h2>Add a New Post</h2>
         <label>Title</label>
         <input
-        type="text"
-        value={title}
-        onChange={(event) => setTitle(event.target.value)}
+          type="text"
+          value={title}
+          onChange={(event) => setTitle(event.target.value)}
         />
-        <br></br>
+        <br />
         <label>Content</label>
         <textarea
-        value={content}
-        onChange={(event) => setContent(event.target.value)}
+          value={content}
+          onChange={(event) => setContent(event.target.value)}
         />
-        <br></br>
+        <br />
         <label>Image</label>
         <input
-        type='type'
-        value={imageUrl}
-        onChange={(event) => setImageUrl(event.target.value)}
+          type="text" 
+          value={imageUrl}
+          onChange={(event) => setImageUrl(event.target.value)}
         />
-        <br></br>
+        <br />
       </div>
       <button type="submit">Add Post</button>
     </form>
