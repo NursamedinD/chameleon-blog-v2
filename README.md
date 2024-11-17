@@ -24,8 +24,8 @@ You can view the live server here: https://chameleon-blog-v2.vercel.app/new
 ## Cloning process
 1. Click the clone button.
 2. Copy the link in the SSH tab.
-3. Go to your terminal and type "git@github.com:NursamedinD/chameleon-blog.git".
-4. Once done go into the directory by doing cd NursamedinD/chameleon-blog.
+3. Go to your terminal and type "git@github.com:NursamedinD/chameleon-blog-v2.git".
+4. Once done go into the directory by doing cd NursamedinD/chameleon-blog-v2.git into the terminal.
 5. Finally type in code . to open it into your prefered programming app.
 
 ## Description
