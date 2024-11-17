@@ -13,7 +13,8 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:5000/posts")
     .then((response) => response.json())
-    .then((data) => setPosts(data));
+    .then((data) => 
+      setPosts(data));
   }, []);
 
   return (
@@ -21,8 +22,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home initialPosts={posts} />} />
-          <Route path="/post/:id" element={<PostBlog />} />
+          <Route path="/" element={<Home posts={posts} />} />
+          <Route path="/post/:id" element={<PostBlog posts={posts} />} />
           <Route path="/new" element={<NewPostForm />} />
         </Routes>
       </Router>

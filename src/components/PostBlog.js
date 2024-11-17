@@ -1,15 +1,9 @@
-import React, { useEffect, useState }from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
-function PostBlog() {
-  const [posts, setPosts] = useState([])
+function PostBlog({posts}) {
   const { id } = useParams();
-
-  useEffect(() => {
-    fetch("http://localhost:5000/posts")
-    .then((response) => response.json())
-    .then((data) => setPosts(data));
-  }, [id]);
+  const post = posts.find((post) => post.id === parseInt(id));
 
   if (!post) return <p>Loading...may take a bit</p>;
 
