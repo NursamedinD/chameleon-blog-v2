@@ -6,6 +6,13 @@ This is a project made by Nursamedin Abdi Dualle, it is a blog about chameleons,
 * A computer.
 * Internet access.
 
+You can view the live server here: https://chameleon-blog-v2.vercel.app/new
+
+# Features
+* Can look at posts in full detail by pressing "Continue reading".
+* Users can go to the New Post button and add a post of their own.
+* After submitting a form, press the home button and scroll down to see your own post.
+
 
 # Run locally
 
