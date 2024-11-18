@@ -11,14 +11,14 @@ function App() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/posts")
+    fetch("https://chameleon-blog-v2-data.onrender.com")
     .then((response) => response.json())
     .then((data) => 
       setPosts(data));
   }, []);
 
 const addPost = (newPost) => {
-  fetch("http://localhost:5000/posts", {
+  fetch("https://chameleon-blog-v2-data.onrender.com", {
     method: 'POST',
     headers: {
       "Content-type": "application/json",
